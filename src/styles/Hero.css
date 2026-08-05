@@ -1,42 +1,55 @@
 .hero {
-  position: relative;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: top center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    background: var(--paper);
+    color: var(--ink);
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+.hero p {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    max-width: 48rem;
 }
 
-.hero-content {
-    font: 100% Arial, sans-serif;
-    padding: 15px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    z-index: 1;
+.hero h1 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    max-width: 48rem;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.hero a {
+    margin-top: 2.25rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background: linear-gradient(120deg, var(--accent-c), var(--accent-a));
+    text-decoration: none;
 }
 
-.hero-content h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    z-index: 1;
+.hero-dots {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(var(--accent-a) 1px, transparent 1px);
+    background-size: 22px 22px;
 }
 
-.hero-content p {
-    font-size: 12px;
-    margin-bottom: 1rem;
+/* For exceptionally large screens, obey the following conditions... */
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 4.25rem;
+        line-height: 1.05;
+    }
 }
