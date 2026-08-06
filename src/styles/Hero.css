@@ -17,12 +17,14 @@
     font-family: "JetBrains Mono", monospace;
     font-size: 0.875rem;
     max-width: 48rem;
+    color: gray;
 }
 
 .hero h1 {
-    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-size: 1rem;
     line-height: 1.1;
-    max-width: 48rem;
+    max-width: 12rem;
 }
 
 .hero a {
@@ -37,6 +39,7 @@
     font-weight: 500;
     background: linear-gradient(120deg, var(--accent-c), var(--accent-a));
     text-decoration: none;
+    max-width: 17rem;
 }
 
 .hero-dots {
