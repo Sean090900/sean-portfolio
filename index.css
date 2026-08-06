@@ -4,3 +4,13 @@
   --accent-c: #6C9CF2;
   --accent-a: #3FCB84;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+}
