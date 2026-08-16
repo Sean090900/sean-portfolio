@@ -10,27 +10,21 @@ function Scramble({ text }: {text: string}) {
     useEffect(() => {
         let frame = 0;
         const totalFrames = 22;
-
         const intervalId = setInterval(() => {
             frame++;
             const revealCount = Math.floor((frame / totalFrames) * text.length);
-
             setDisplay(
                 text.split("").map((ch, i) => 
                     i < revealCount ? ch : SCRAMBLE_CHARS[Math.floor(Math.random() * SCRAMBLE_CHARS.length)]
                 ).join("")
             );
-
             if (frame >= totalFrames) {
                 clearInterval(intervalId);
             }
-
         }, 32);
         return () => clearInterval(intervalId);
-
     }, [text]);
     return <span>{display}</span>;
-
 }
 
 // Blured orb effects
@@ -72,7 +66,7 @@ export default function Hero({intro, description, buttonText}: HeroProps) {
     // recompute on every render, driven by the current spotlight state
     const centeredX = parseFloat(spotlight.x) / 100 - 0.5;
     const centeredY = parseFloat(spotlight.y) / 100 - 0.5;
-    const orbOffset = {x: centeredX * -75, y: centeredY * -75};
+    const orbOffset = {x: centeredX * -100, y: centeredY * -100};
 
     return (
         <section 

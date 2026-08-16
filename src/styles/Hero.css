@@ -1,5 +1,5 @@
 .hero {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "helvetica neue", sans-serif;
     position: relative;
     min-height: 100vh;
     min-width: 100vw;
@@ -17,13 +17,13 @@
 
 .hero p {
     font-size: 0.875rem;
+    font-family: "JetBrains Mono", monospace;
     max-width: 48rem;
     color: rgb(172, 172, 172);
     z-index: 2;
 }
 
 .hero h1 {
-    font-family: "helvetica neue", sans-serif;
     font-size: 1.5rem;
     line-height: 1.1;
     max-width: 25rem;
@@ -34,11 +34,9 @@
     margin-top: 2.25rem;
     display: inline-flex;
     align-items: center;
-    /* gap: 0.5rem; */
     padding: 0.625rem 1.25rem;
     border-radius: 9999px;
     color: white;
-    font-family: "helvetica neue", sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     background: linear-gradient(120deg, var(--accent-c), var(--accent-a));
