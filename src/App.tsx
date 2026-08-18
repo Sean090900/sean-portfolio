@@ -28,7 +28,8 @@ function App() {
             />
             <Hero
                 intro="Hi, I'm Sean!"
-                description="I'm a software engineer building AI systems."
+                description="I'm a software engineer building "
+                gradientText="AI systems."
                 buttonText="View my work"
             />
             <Project 

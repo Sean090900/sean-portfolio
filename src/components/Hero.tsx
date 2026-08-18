@@ -31,15 +31,21 @@ function Scramble({ text }: {text: string}) {
 interface HeroProps {
     intro: string;
     description: string;
+    gradientText: string;
     buttonText: string;
 }
-export default function Hero({intro, description, buttonText}: HeroProps) {
+export default function Hero({intro, description, gradientText, buttonText}: HeroProps) {
     return (
         <section 
             className="hero"
         >
-            <p><Scramble text={intro} /></p>
-            <h1><Scramble text={description} /></h1>
+            <p><Scramble text={intro}/></p>
+            <h1>
+                <Scramble text={description}/>
+                <span className="gradientText">
+                    <Scramble text={gradientText}/>
+                </span>
+            </h1>
             <a href="#about">{buttonText}</a>
         </section>
     );

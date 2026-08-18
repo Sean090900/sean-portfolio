@@ -1,14 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 .project {
-    font-family: "helvetica neue", sans-serif;
     position: relative;
     min-height: 70vh;
-    min-width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     background: transparent;
     color: var(--ink);
     gap: 2rem;
@@ -21,29 +19,27 @@
 
 .right-col {
     flex: 1;
+    font-size: 0.7rem;
 }
 
 .left-col h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
-.left-col h2 {
+.left-col-subtitle {
     font-family: "JetBrains Mono", monospace;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: rgb(172, 172, 172);
     margin-bottom: 2rem;
 }
 
-.left-col p {
-    font-size: 0.7rem;
-}
-
-.right-col {
-    font-size: 0.7rem;
+.left-col-description {
+    font-family: "Inter";
+    font-size: 0.75rem;
 }
 
 .right-col img {
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
 }

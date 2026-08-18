@@ -1,22 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
 .hero {
-    font-family: "helvetica neue", sans-serif;
     position: relative;
     min-height: 100vh;
-    min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 64rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     overflow: hidden;
     background: transparent;
     color: var(--ink);
-    gap: .25rem;
 }
 
 .hero p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-family: "JetBrains Mono", monospace;
     max-width: 48rem;
     color: rgb(172, 172, 172);
@@ -24,13 +21,24 @@
 }
 
 .hero h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Fraunces', serif;
     line-height: 1.1;
-    max-width: 25rem;
+    max-width: 15rem;
     z-index: 2;
 }
 
+.gradientText {
+    background: linear-gradient(90deg, var(--accent-c), var(--accent-a));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+}
+
 .hero a {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Inter";
     margin-top: 2.25rem;
     display: inline-flex;
     align-items: center;
@@ -41,29 +49,9 @@
     font-weight: 500;
     background: linear-gradient(120deg, var(--accent-c), var(--accent-a));
     text-decoration: none;
-    max-width: 120px;
+    max-width: 127px;
     z-index: 2;
 }
-
-/* .hero-dots {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background-image: radial-gradient(var(--accent-c) 1px, transparent 1px);
-    background-size: 22px 22px;
-    z-index: 0;
-}
-
-.hero-orb {
-    position: absolute;
-    height: 25rem;
-    width: 25rem;
-    border-radius: 50%;
-    opacity: 20%;
-    filter: blur(60px);
-    transition: transform 0.3s ease-out;
-    z-index: 1;
-} */
 
 /* For exceptionally large screens, obey the following conditions... */
 @media (min-width: 768px) {

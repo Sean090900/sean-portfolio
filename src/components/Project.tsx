@@ -13,15 +13,14 @@ export default function Project({projectTitle, projectSubtitle, projectDescripti
                 <h1>
                     {projectTitle}
                 </h1>
-                <h2>
+                <p className="left-col-subtitle">
                     {projectSubtitle}
-                </h2>
-                <p>
+                </p>
+                <p className="left-col-description">
                     {projectDescription}
                 </p>
             </div>
             <div className="right-col">
-                {/* <p>This is the right-hand side, image?</p> */}
                 <img src="src/assets/Headshot.png"/>
             </div>
         </section>
