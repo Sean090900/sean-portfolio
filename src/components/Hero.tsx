@@ -27,27 +27,6 @@ function Scramble({ text }: {text: string}) {
     return <span>{display}</span>;
 }
 
-// Blured orb effects
-interface BlurredOrbProps {
-    background: string,
-    top: string,
-    left: string,
-    offset: {x: number, y: number}
-}
-function BlurredOrb({background, top, left, offset}: BlurredOrbProps) {
-    return (
-        <div 
-            className="hero-orb"
-            style={{
-                background: background,
-                top: top,
-                left: left,
-                transform: `translate(${offset.x}px, ${offset.y}px)`,
-            }}
-        />
-    )
-}
-
 // Main Hero Function
 interface HeroProps {
     intro: string;
@@ -55,32 +34,10 @@ interface HeroProps {
     buttonText: string;
 }
 export default function Hero({intro, description, buttonText}: HeroProps) {
-    const [spotlight, setSpotLight] = useState({x:"50%", y:"40%"});
-    const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const relX = (e.clientX - rect.left) / rect.width;
-        const relY = (e.clientY - rect.top) / rect.height;
-        setSpotLight({x: `${relX * 100}%`, y: `${relY * 100}%` });
-    };
-
-    // recompute on every render, driven by the current spotlight state
-    const centeredX = parseFloat(spotlight.x) / 100 - 0.5;
-    const centeredY = parseFloat(spotlight.y) / 100 - 0.5;
-    const orbOffset = {x: centeredX * -100, y: centeredY * -100};
-
     return (
         <section 
             className="hero"
-            onMouseMove={handleMouseMove}
         >
-            <div
-                className="hero-dots"
-                style={{
-                    maskImage: `radial-gradient(340px circle at ${spotlight.x} ${spotlight.y}, black, transparent)`
-                }}
-            />
-            <BlurredOrb background="var(--accent-a)" top="5vh" left="5vw" offset={orbOffset}/>
-            <BlurredOrb background="var(--accent-c)" top="40vh" left="70vw" offset={orbOffset}/>
             <p><Scramble text={intro} /></p>
             <h1><Scramble text={description} /></h1>
             <a href="#about">{buttonText}</a>

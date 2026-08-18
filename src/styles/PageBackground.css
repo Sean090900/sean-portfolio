@@ -1,0 +1,49 @@
+.pageBackground {
+    position: fixed;
+    inset: 0;
+    background: var(--paper);
+    z-index: 0;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 20%;
+    filter: blur(50px);
+    transition: transform 0.3s ease-out;
+    z-index: 2;
+}
+
+.dots {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(var(--accent-c) 1px, transparent 1px);
+    background-size: 22px 22px;
+    z-index: 1;
+}
+
+.ripple {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 2px solid var(--accent-c);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+    animation: ripple-expand 800ms ease-out forwards;
+}
+
+@keyframes ripple-expand {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 0.6;
+    }
+    to {
+        width: 400px;
+        height: 400px;
+        opacity: 0;
+    }
+}

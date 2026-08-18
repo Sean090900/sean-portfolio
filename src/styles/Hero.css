@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding: 0 1.5rem;
     overflow: hidden;
-    background: var(--paper);
+    background: transparent;
     color: var(--ink);
     gap: .25rem;
 }
@@ -45,7 +45,7 @@
     z-index: 2;
 }
 
-.hero-dots {
+/* .hero-dots {
     position: absolute;
     inset: 0;
     pointer-events: none;
@@ -63,7 +63,7 @@
     filter: blur(60px);
     transition: transform 0.3s ease-out;
     z-index: 1;
-}
+} */
 
 /* For exceptionally large screens, obey the following conditions... */
 @media (min-width: 768px) {
