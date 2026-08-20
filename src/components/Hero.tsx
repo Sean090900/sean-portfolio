@@ -38,6 +38,7 @@ export default function Hero({intro, description, gradientText, buttonText}: Her
     return (
         <section 
             className="hero"
+            id="hero"
         >
             <p><Scramble text={intro}/></p>
             <h1>
@@ -46,7 +47,7 @@ export default function Hero({intro, description, gradientText, buttonText}: Her
                     <Scramble text={gradientText}/>
                 </span>
             </h1>
-            <a href="#projects">{buttonText}</a>
+            <a href="#project-section">{buttonText}</a>
         </section>
     );
 }

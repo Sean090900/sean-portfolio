@@ -1,4 +1,5 @@
 import Hero from './components/Hero'
+import NavBar from './components/NavBar'
 import ProjectSection from './components/ProjectSection'
 import PageBackground from './components/PageBackground'
 import './App.css'
@@ -26,6 +27,7 @@ function App() {
                 spotlight={spotlight}
                 orbOffset={orbOffset}
             />
+            <NavBar/>
             <Hero
                 intro="Hi, I'm Sean!"
                 description="I'm a software engineer building "
