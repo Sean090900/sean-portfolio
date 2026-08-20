@@ -1,0 +1,14 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap'); */
+
+.projects {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--ink);
+    gap: 2rem;
+    z-index: 1;
+}

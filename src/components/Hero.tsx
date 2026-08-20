@@ -46,7 +46,7 @@ export default function Hero({intro, description, gradientText, buttonText}: Her
                     <Scramble text={gradientText}/>
                 </span>
             </h1>
-            <a href="#about">{buttonText}</a>
+            <a href="#projects">{buttonText}</a>
         </section>
     );
 }

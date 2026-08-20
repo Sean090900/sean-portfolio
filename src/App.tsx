@@ -1,5 +1,5 @@
 import Hero from './components/Hero'
-import Project from './components/Project'
+import ProjectSection from './components/ProjectSection'
 import PageBackground from './components/PageBackground'
 import './App.css'
 import { useState } from 'react'
@@ -32,11 +32,7 @@ function App() {
                 gradientText="AI systems."
                 buttonText="View my work"
             />
-            <Project 
-                projectTitle="Fake Project 1"
-                projectSubtitle="The subtitle for the project..."
-                projectDescription="This is the description for Fake Project 1."
-            />
+            <ProjectSection/>
         </div>
     )
 }
