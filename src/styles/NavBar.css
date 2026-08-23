@@ -8,8 +8,11 @@
     justify-content: center;
     background: var(--paper);
     border: 1px solid var(--outline);
-    height: 2rem;
-    width: min(90vw, 20rem);
+    height: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* width: min(90vw, 20rem); */
+    width: auto;
     border-radius: 50px;
     z-index: 3;
 }
@@ -28,14 +31,10 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     text-transform: uppercase;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.2rem;
+    padding: 0.65rem;
     align-content: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .nav-links a:hover {
     background: var(--accent-c);
     border-radius: 50px;

@@ -107,7 +107,7 @@
 .card a {
     margin-top: 1rem;
     padding: 0.625rem 1.25rem;
-    border-radius: 9999px;
+    border-radius: 50px;
     /* background: linear-gradient(120deg, var(--accent-c), var(--accent-a)); */    
     font-family: "Inter";
     font-size: 0.75rem;
@@ -120,5 +120,5 @@
 .card a:hover {
     transform: translateY(-3px);
     box-shadow: 0px 0px 3px 3px var(--ink-35);
-    color: white;
+    color: var(--ink);
 }

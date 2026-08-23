@@ -40,13 +40,13 @@ export default function Hero({intro, description, gradientText, buttonText}: Her
             className="hero"
             id="hero"
         >
-            <p><Scramble text={intro}/></p>
-            <h1>
+            <p className="hero-intro"><Scramble text={intro}/></p>
+            <p className="hero-description">
                 <Scramble text={description}/>
                 <span className="gradientText">
                     <Scramble text={gradientText}/>
                 </span>
-            </h1>
+            </p>
             <a href="#project-section">{buttonText}</a>
         </section>
     );
