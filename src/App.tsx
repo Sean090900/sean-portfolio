@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import ProjectSection from './components/ProjectSection'
 import PageBackground from './components/PageBackground'
+import Contact from './components/Contact'
 import './App.css'
 import { useState } from 'react'
 
@@ -35,6 +36,7 @@ function App() {
                 buttonText="View my work"
             />
             <ProjectSection/>
+            <Contact/>
         </div>
     )
 }
