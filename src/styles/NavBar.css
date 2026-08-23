@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background: var(--paper);
-    border: 1px solid rgb(64, 75, 64);
+    border: 1px solid var(--outline);
     height: 2rem;
     width: min(90vw, 20rem);
     border-radius: 50px;
@@ -23,7 +23,7 @@
 }
 
 .nav-links a {
-    color: aliceblue;
+    color: var(--ink);
     text-decoration: none;
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;

@@ -1,9 +1,19 @@
 :root {
   --paper: #0E1512;
   --ink: #EAF1EA;
+  --ink-35: rgba(234, 241, 234, 0.35);
+  --ink-55: rgba(234, 241, 234, 0.55);
+  --ink-70: rgba(234, 241, 234, 0.70);
+  --ink-80: rgba(234, 241, 234, 0.80);
+
+  --subtitle: rgb(172, 172, 172);;
+  --outline: #2C3E36;
+
   --accent-c: #6c9cf2;
   --accent-b: #F0BB4B;
   --accent-a: #3FCB84;
+
+  --well-50: rgba(26, 35, 32, 0.50);
 }
 
 * {

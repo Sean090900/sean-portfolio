@@ -4,64 +4,111 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter";
+    background-color: var(--well);
+    backdrop-filter: blur(10px);
     padding: 1.5rem;
-    border-radius: 25px;
-    border: 1px solid var(--accent-c);
+    border-radius: 1rem;
+    border: 1px solid var(--outline);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
 }
 .card:hover {
-    transform: translateY(-5px);
-    background-color: rgba(15, 15, 15, 0.5);
-    box-shadow: 3px 3px 3px 3px rgb(108, 156, 242);
+    /* transform: translateY(-5px); */
+    box-shadow: 0 0 10px 0px var(--ink-35);
 }
 
 .card img {
-    width: 75%;
+    width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 1rem;
     margin-bottom: 1rem;
+}
+
+.subject-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.subject {
+    display: inline;
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.types {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-55);
+    padding: 0.125rem 0.5rem;
+    margin-right: .5rem;
+    margin-bottom: 0;
+    border-radius: 9999px;
+    border: 1px solid var(--outline);
 }
 
 .title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 0;
 }
 
 .subtitle {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 0.75rem;
-    color: rgb(172, 172, 172);
-    margin-bottom: 1rem;
-}
-
-.card span {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: var(--accent-c);
-    margin-bottom: 1rem;
-    opacity: 0.4;
+  font-size: 0.85rem;
+  color: var(--ink-55);
+  margin-bottom: .5rem;
 }
 
 .description {
-    font-family: "Inter";
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.625;
+    color: var(--ink-80);
+    margin-bottom: 1.25rem;
+}
+
+.tag {
+    display: inline-flex;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 0.125rem 0.5rem;
+    margin-right: .5rem;
+    border-radius: 9999px;
+    margin-bottom: 0.75rem;
+}
+
+.buttons {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.demo {
+    max-width: 80px;
+    color: white;
+}
+
+.github {
+    max-width: 150px;
+    color: var(--ink-55);
+    border: 1px solid var(--outline);
 }
 
 .card a {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
     margin-top: 1rem;
     padding: 0.625rem 1.25rem;
     border-radius: 9999px;
-    background: linear-gradient(120deg, var(--accent-c), var(--accent-a));
-    color: white;
+    /* background: linear-gradient(120deg, var(--accent-c), var(--accent-a)); */    
     font-family: "Inter";
     font-size: 0.75rem;
     font-weight: 500;
@@ -70,8 +117,8 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     z-index: 2;
 }
-
 .card a:hover {
     transform: translateY(-3px);
-    box-shadow: 3px 3px 3px 0 rgb(89, 89, 89);
+    box-shadow: 0px 0px 3px 3px var(--ink-35);
+    color: white;
 }

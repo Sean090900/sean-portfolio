@@ -14,16 +14,24 @@ export default function ProjectSection() {
             </div>
             <div className="project-grid">
                 <ProjectCard
-                    projectTitle="Fake Project 1" 
-                    projectSubtitle="Subtitle for Fake Project 1" 
-                    projectDescription="This is the decriptive text that describes Fake Project 1..."
                     image={headshot}
+                    subject="Data Engineeing"
+                    types={["Internal", "Production System"]}
+                    title="ETL & Integration Pipelines" 
+                    subtitle="Recombia Biosciences" 
+                    description="Python ETL pipelines, API integrations, and AWS infrastructure that turn raw scientific data into something a downstream tool — or a model — can actually use. Runs in production today."
+                    tags={["Python", "Benchling API", "AWS", "ETL Pipelines"]}
+                    accent='var(--accent-c)'
                 />
                 <ProjectCard 
-                    projectTitle="Fake Project 2" 
-                    projectSubtitle="Subtitle for Fake Project 2" 
-                    projectDescription="This is the decriptive text that describes Fake Project 2..."
                     image={headshot}
+                    subject="Applied ML"
+                    types={["Coursework", "ML Systems"]}
+                    title="RAG Retrieval Pipeline" 
+                    subtitle="JHU coursework" 
+                    description="Retrieval-augmented pipeline built for a graduate AI course on the Mistral API. Set aside before the interview stage to rebuild on footing I could defend line by line."
+                    tags={["RAG", "Python", "Mistral API"]}
+                    accent='var(--accent-a)'
                 />
             </div>
         </section>
