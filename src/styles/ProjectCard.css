@@ -64,7 +64,8 @@
 .subtitle {
   font-size: 0.85rem;
   color: var(--ink-55);
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .description {
@@ -74,6 +75,10 @@
     margin-bottom: 1.25rem;
 }
 
+.tags {
+    margin-bottom: 0.5rem;
+}
+
 .tag {
     display: inline-flex;
     font-family: 'JetBrains Mono', monospace;
@@ -81,7 +86,7 @@
     padding: 0.125rem 0.5rem;
     margin-right: .5rem;
     border-radius: 9999px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
 }
 
 .buttons {

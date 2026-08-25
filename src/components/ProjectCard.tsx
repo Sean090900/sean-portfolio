@@ -1,7 +1,7 @@
 import '../styles/ProjectCard.css'
 
 interface ProjectProps {
-    image: string;
+    // image: string;
     subject: string;
     types: string[]; 
     title: string;
@@ -9,15 +9,14 @@ interface ProjectProps {
     description: string;
     tags: string[];
     accent: string;
-
 }
-export default function Project({image, subject, types, title, subtitle, description, tags, accent}: ProjectProps) {
+export default function Project({subject, types, title, subtitle, description, tags, accent}: ProjectProps) {
     return (
         <div className="card">
-            <img src={image}/>
+            {/* <img src={image}/> */}
             <span className="subject-line">
                 <p className="subject" style={{ color: accent}}>{subject}</p>
-                <span className="types">{types.join(' | ')}</span>
+                <span className="types">{types.join(' · ')}</span>
             </span>
             <p className="title">{title}</p>
             <p className="subtitle">{subtitle}</p>
@@ -35,7 +34,7 @@ export default function Project({image, subject, types, title, subtitle, descrip
                 </div>
             </div>
             <div className="buttons">
-                <a className="demo" href="" style={{ background: accent }}>Demo</a>
+                {/* <a className="demo" href="" style={{ background: accent }}>Demo</a> */}
                 <a className="github" href="">See GitHub Repo</a>
             </div>
         </div>
