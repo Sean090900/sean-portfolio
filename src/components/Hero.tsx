@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 // Letter scrambling effects 
 const SCRAMBLE_CHARS = '!<>-_/[]{}=+*^?#01';
+// const SCRAMBLE_CHARS = '<>';
 
 function Scramble({ text }: {text: string}) {
     const [display, setDisplay] = useState(text);

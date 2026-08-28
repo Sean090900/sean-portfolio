@@ -1,5 +1,5 @@
 import Hero from './components/Hero'
-import NavBar from './components/NavBar'
+// import NavBar from './components/NavBar'
 import ProjectSection from './components/ProjectSection'
 import PageBackground from './components/PageBackground'
 import Contact from './components/Contact'
@@ -28,7 +28,7 @@ function App() {
                 spotlight={spotlight}
                 orbOffset={orbOffset}
             />
-            <NavBar/>
+            {/* <NavBar/> */}
             <Hero
                 intro="Hi, I'm Sean!"
                 description="I'm a software engineer building "

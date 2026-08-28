@@ -5,12 +5,15 @@ interface ProjectProps {
     subject: string;
     types: string[]; 
     title: string;
+    location: string;
     subtitle: string;
     description: string;
     tags: string[];
     accent: string;
+    buttonText: string;
+    link: string;
 }
-export default function Project({subject, types, title, subtitle, description, tags, accent}: ProjectProps) {
+export default function Project({subject, types, title, location, subtitle, description, tags, accent, buttonText, link}: ProjectProps) {
     return (
         <div className="card">
             {/* <img src={image}/> */}
@@ -19,7 +22,10 @@ export default function Project({subject, types, title, subtitle, description, t
                 <span className="types">{types.join(' · ')}</span>
             </span>
             <p className="title">{title}</p>
+            
+            <p className="location">{location}</p><p/>
             <p className="subtitle">{subtitle}</p>
+            
             <p className="description">{description}</p>
             <div className="tagline">
                 <div className="tags">
@@ -35,7 +41,7 @@ export default function Project({subject, types, title, subtitle, description, t
             </div>
             <div className="buttons">
                 {/* <a className="demo" href="" style={{ background: accent }}>Demo</a> */}
-                <a className="github" href="">See GitHub Repo</a>
+                <a className="github" href={link}>{buttonText}</a>
             </div>
         </div>
     )
