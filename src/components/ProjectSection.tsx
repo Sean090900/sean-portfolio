@@ -38,8 +38,8 @@ export default function ProjectSection() {
                 ))}
             </div>
             <div className="project-grid">
-                {filteredProjects.map( (project) => (
-                    <ProjectCard key={project.title} {...project} />
+                {filteredProjects.map( (project, index) => (
+                    <ProjectCard key={project.title} {...project} index={index} />
                 ))}
             </div>
         </section>

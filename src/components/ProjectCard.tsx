@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import '../styles/ProjectCard.css'
 
 interface BulletListProps {
@@ -31,10 +32,34 @@ interface ProjectProps {
     accent: string;
     buttonText: string;
     link: string;
+    index: number;
 }
-export default function Project({subject, types, title, location, subtitle, descriptionItems, tags, accent, buttonText, link}: ProjectProps) {
+export default function Project({subject, types, title, location, subtitle, descriptionItems, tags, accent, buttonText, link, index}: ProjectProps) {
+    const cardRef = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const node = cardRef.current;
+        if (!node) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(node);
+                }
+            },
+            { threshold: 0.15 }
+        );
+        observer.observe(node);
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <div className="card">
+        <div
+            ref={cardRef}
+            className={`card${isVisible ? ' in-view' : ''}`}
+            style={{ transitionDelay: `${(index % 2) * 120}ms` }}
+        >
             {/* <img src={image}/> */}
             <span className="subject-line">
                 <p className="subject" style={{ color: accent}}>{subject}</p>
