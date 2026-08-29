@@ -16,16 +16,6 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-    // {
-    //     // image: headshot,
-    //     subject: "",
-    //     types: [""],
-    //     title: "",
-    //     subtitle: "",
-    //     description: "",
-    //     tags: [""],
-    //     accent: "var()",
-    // },
     {
         // image: headshot,
         subject: "Machine Learning",
@@ -33,7 +23,6 @@ export const projects: Project[] = [
         title: "ML Fraud Detection System",
         location: "Johns Hopkins University | M.S. AI",
         subtitle: "ML-driven credit card fraud detection system with class imbalance handling",
-        // description: "An end-to-end fraud detection pipeline built and deployed as a REST API. Applied SMOTE for synthetic minority oversampling and hard-negative mining to improve model recall on highly imbalanced transaction data. Deployed with health checks and structured logging.", 
         descriptionItems: [
             "An end-to-end fraud detection pipeline built and deployed as a REST API.",
             "Applied SMOTE for synthetic minority oversampling and hard-negative mining to improve model recall on highly imbalanced transaction data.",
