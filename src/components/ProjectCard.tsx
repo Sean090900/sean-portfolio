@@ -27,13 +27,12 @@ interface ProjectProps {
     location: string;
     subtitle: string;
     descriptionItems: string[];
-    description: string;
     tags: string[];
     accent: string;
     buttonText: string;
     link: string;
 }
-export default function Project({subject, types, title, location, subtitle, descriptionItems, description, tags, accent, buttonText, link}: ProjectProps) {
+export default function Project({subject, types, title, location, subtitle, descriptionItems, tags, accent, buttonText, link}: ProjectProps) {
     return (
         <div className="card">
             {/* <img src={image}/> */}
