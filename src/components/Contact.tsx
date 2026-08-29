@@ -78,14 +78,13 @@ export default function Contact() {
                             placeholder='What would you like to talk about?'
                         />
                     </div>
-
                     <button
                         type="submit"
                         className="input-submit-button"
                         style={{ background: `linear-gradient(120deg, var(--accent-c), var(--accent-a))` }}
                     >
                         Send Message
-                        <Send size={14} />
+                        <Send size={14}/>
                     </button>
 
                 </form>
