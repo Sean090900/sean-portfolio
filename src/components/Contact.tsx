@@ -55,7 +55,7 @@ export default function Contact() {
                     <span className="contact-buttons">
 
                         <a className="email-link" href="mailto:seandickson0909@gmail.com">
-                            <Mail size={15} /> 
+                            <Mail size={15}/> 
                             seandickson0909@gmail.com
                         </a>
                         <a className="github-link" href="https://github.com/Sean090900/SeanPortfolioPublic" target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,7 @@ export default function Contact() {
                             </svg>
                         </a>
                         <a className="resume-download" href="/SeanDicksonResume.pdf" download="SeanDicksonResume.pdf">
-                            <Download size={15} />
+                            <Download size={15}/>
                         </a>
 
                     </span>
@@ -114,7 +114,7 @@ export default function Contact() {
                         {status === 'sending' ? 'Sending...' : 'Send Message'}
                         <Send size={14}/>
                     </button>
-                    {status === 'success' && <p className="form-status form-status-success">Message sent — thanks for reaching out!</p>}
+                    {status === 'success' && <p className="form-status form-status-success">Message sent. Thanks for reaching out!</p>}
                     {status === 'error' && <p className="form-status form-status-error">Something went wrong. Please try again or email me directly.</p>}
 
                 </form>

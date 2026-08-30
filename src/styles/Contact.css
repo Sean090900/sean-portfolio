@@ -60,6 +60,7 @@
     color: var(--ink-80);
     line-height: 1.625;
     margin-bottom: 2rem;
+    max-width: 40vw;
 }
 
 .contact-buttons {
@@ -172,10 +173,9 @@
     font-family: "Inter", sans-serif;
     font-size: 0.75rem;
     text-transform: none;
-    letter-spacing: normal;
 }
 .form-status-success {
-    color: var(--accent-c);
+    color: var(--ink-70);
 }
 .form-status-error {
     color: #e5484d;
