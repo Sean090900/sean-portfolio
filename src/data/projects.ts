@@ -34,7 +34,7 @@ export const projects: Project[] = [
         tags: ["Python", "Pandas", "scikit-learn", "SMOTE", "Hard-Negative Mining", "Feature Engineering", "Classification", "Flask", "REST APIs", "Docker"],
         accent: 'var(--accent-a)',
         buttonText: "See GitHub Repo",
-        link: "",
+        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/AI-ML/securebank",
     },
     {
         // image: headshot,
@@ -54,7 +54,7 @@ export const projects: Project[] = [
         tags: ["Python", "Pandas", "NumPy", "OpenCV", "YOLO", "Hard-Negative Mining", "Docker", "Flask", "REST APIs"],
         accent: 'var(--accent-a)',
         buttonText: "See GitHub Repo",
-        link: "",
+        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/AI-ML/techtrack-Sean090900",
     },
     {
         // image: headshot,
@@ -72,7 +72,7 @@ export const projects: Project[] = [
         tags: ["Python", "Pandas", "NumPy", "matplotlib", "PIL", "Vector Indexing (FAISS)", "Flask", "REST APIs"],
         accent: 'var(--accent-a)',
         buttonText: "See GitHub Repo",
-        link: "",
+        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/AI-ML/ironclad-Sean090900",
     },
     {
         // image: headshot,
@@ -106,7 +106,7 @@ export const projects: Project[] = [
         tags: ["Python", "Mistral API", "Vector Indexing (FAISS)", "Pandas", "scikit-learn", "Flask", "REST APIs", "Docker"],
         accent: 'var(--accent-a)',
         buttonText: "See GitHub Repo",
-        link: "",
+        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/AI-ML/textwave-Sean090900",
     },
     {
         // image: headshot,
@@ -163,21 +163,21 @@ export const projects: Project[] = [
         buttonText: "See GitHub Repo",
         link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/multi-sorter",
     },
-    {
-        // image: headshot,
-        subject: "Data Engineeing",
-        types: ["Personal", "ETL Pipeline"],
-        title: "Financial Data Pipeline",
-        location: "",
-        subtitle: "",
-        descriptionItems: [
+    // {
+    //     // image: headshot,
+    //     subject: "Data Engineeing",
+    //     types: ["Personal", "ETL Pipeline"],
+    //     title: "Financial Data Pipeline",
+    //     location: "",
+    //     subtitle: "",
+    //     descriptionItems: [
             
-        ],
-        tags: [""],
-        accent: "var(--accent-c)",
-        buttonText: "See GitHub Repo",
-        link: "",
-    },
+    //     ],
+    //     tags: [""],
+    //     accent: "var(--accent-c)",
+    //     buttonText: "See GitHub Repo",
+    //     link: "",
+    // },
     {
         // image: headshot,
         subject: "AI / ML",
