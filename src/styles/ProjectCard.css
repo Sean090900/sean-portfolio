@@ -76,11 +76,11 @@
 }
 
 .subtitle {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    font-family: 'Fraunces', serif;
     padding: 0;
     margin-top: 0.85rem;
     margin-bottom: 0;
-    font-style: italic;
 }
 
 .description {
@@ -110,10 +110,14 @@
 
 .bullet-list-dot {
   flex-shrink: 0;
-  width: 0.375rem;   /* w-1.5 */
-  height: 0.375rem;  /* h-1.5 */
+  width: 0.375rem;
+  height: 0.375rem;
   border-radius: 9999px;
-  margin-top: 0.5rem; /* mt-2 — nudges the dot down to align with the first line of text instead of sitting at the very top */
+  margin-top: 0.5rem;
+}
+
+.tagline {
+    margin-top: auto;
 }
 
 .tags {
@@ -134,7 +138,6 @@
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    margin-top: auto;
     justify-content: flex-start;
     gap: 0.5rem;
 }
