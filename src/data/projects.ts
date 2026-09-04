@@ -142,7 +142,7 @@ export const projects: Project[] = [
         tags: ["Python", "OOP", "Recursion", "Data Compression"],
         accent: "var(--accent-d)",
         buttonText: "See GitHub Repo",
-        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/huffman-encoder",
+        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/DataStructures%26Algorithms/huffman-encoder",
     },
     {
         // image: headshot,
@@ -161,7 +161,7 @@ export const projects: Project[] = [
         tags: ["Python", "CLI Applications", "File I/O", "Complexity Analysis"],
         accent: "var(--accent-d)",
         buttonText: "See GitHub Repo",
-        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/multi-sorter",
+        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/DataStructures%26Algorithms/multi-sorter",
     },
     // {
     //     // image: headshot,
@@ -194,11 +194,11 @@ export const projects: Project[] = [
         tags: ["Python", "PyTorch", "Pandas", "NumPy", "Kaggle", "OpenCV"],
         accent: "var(--accent-a)",
         buttonText: "See GitHub Repo",
-        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/CNN-image-classifier",
+        link: "https://github.com/Sean090900/SeanPortfolioPublic/tree/main/AI-ML/CNN-image-classifier",
     },
     {
         // image: headshot,
-        subject: "Vibe-Coded Projects :)",
+        subject: "Vibe-Coded Projects",
         types: ["Personal", "Mobile App"],
         title: "Plunk!",
         location: "Personal Coding Project",
@@ -217,7 +217,7 @@ export const projects: Project[] = [
     },
     {
         // image: headshot,
-        subject: "Vibe-Coded Projects :)",
+        subject: "Vibe-Coded Projects",
         types: ["Personal", "Mobile App"],
         title: "Cortex: AI Habit Tracker",
         location: "Personal Coding Project",
