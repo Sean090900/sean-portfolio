@@ -32,7 +32,7 @@ function App() {
             <Hero
                 intro="Hi, I'm Sean Dickson."
                 description="I'm a software engineer building "
-                gradientText="AI systems."
+                gradientText="AI & ML systems."
                 buttonText="View my work"
             />
             <ProjectSection/>
