@@ -51,7 +51,7 @@ export default function Contact() {
             <div className="contact-objects">
                 <div className="contact-text">
                     <h1>Let's Talk.</h1>
-                    <p>Open to full-time software and ML engineering roles, preferably in the biotech space but not limited to it.</p>
+                    <p>Open to full-time software and ML engineering opportunities. I'm drawn to biotech applications, but open to any industry solving interesting problems.</p>
                     <span className="contact-buttons">
 
                         <a className="email-link" href="mailto:seandickson0909@gmail.com">
