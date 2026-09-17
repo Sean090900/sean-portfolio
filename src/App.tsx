@@ -31,7 +31,7 @@ function App() {
             {/* <NavBar/> */}
             <Hero
                 intro="Hi, I'm Sean Dickson."
-                description="I'm a software engineer building "
+                description="I'm a software developer building "
                 gradientText="AI & ML systems."
                 buttonText="View my work"
             />
