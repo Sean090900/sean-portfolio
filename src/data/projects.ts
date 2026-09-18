@@ -19,7 +19,7 @@ export const projects: Project[] = [
         // image: headshot,
         subject: "AI / ML",
         types: ["Coursework", "ML Classification"],
-        title: "ML Fraud Detection System",
+        title: "SecureBank: ML Fraud Detection System",
         location: "Johns Hopkins University | M.S. AI",
         subtitle: "ML-driven credit card fraud detection system built around severe class imbalance.",
         descriptionItems: [
@@ -40,7 +40,7 @@ export const projects: Project[] = [
         // image: headshot,
         subject: "AI / ML",
         types: ["Coursework", "Computer Vision"],
-        title: "Real-Time Computer Vision System",
+        title: "TechTrack: Real-Time Computer Vision System",
         location: "Johns Hopkins University | M.S. AI",
         subtitle: "Dockerized YOLO-based object detection system with NMS, mAP evaluation, and hard-negative-mining for logistics video streams.",
         descriptionItems: [
@@ -98,7 +98,7 @@ export const projects: Project[] = [
         // image: headshot,
         subject: "AI / ML",
         types: ["Coursework", "RAG"],
-        title: "Mistral-Based RAG Pipeline",
+        title: "TextWave: Mistral-Based RAG Pipeline",
         location: "Johns Hopkins University | M.S. AI",
         subtitle: "End-to-end RAG pipeline with FAISS indexing, reranking, and Mistral-powered generation.",
         descriptionItems: [
@@ -116,7 +116,7 @@ export const projects: Project[] = [
         // image: headshot,
         subject: "AI / ML",
         types: ["Coursework", "Visual Search"],
-        title: "AI Facial Recognition System",
+        title: "IronClad: AI Facial Recognition System",
         location: "Johns Hopkins University | M.S. AI",
         subtitle: "A visual search system for top-k identity matching via nearest-neighbor search over facial embeddings (FAISS).",
         descriptionItems: [
